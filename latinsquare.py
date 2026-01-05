@@ -1,4 +1,6 @@
 # remaking cs135's sudoku solver in python bc why not
+# fair warning, this code is SLOW AF
+
 def all_satisfy(pred, matrix):
     return all(all(pred(x) for x in lst) for lst in matrix)
 
